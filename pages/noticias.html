@@ -10,69 +10,94 @@
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-    <!-- Encabezado -->
-    <header class="bg-light border-bottom py-3">
-        <div class="container d-flex justify-content-between align-items-center">
-            <h1 class="h3">Tech Diary</h1>
-            <div>
-                <!-- Botón de búsqueda -->
-                <button class="btn btn-outline-secondary me-2"><i class="bi bi-search"></i></button>
-                <!-- Botón de usuario -->
-                <button class="btn btn-outline-secondary"><i class="bi bi-person"></i></button>
+    <!-- Barra de navegación superior -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom position-fixed w-100" style="z-index: 1030;">
+        <div class="container-fluid">
+            <!-- Título del sitio -->
+            <a class="navbar-brand" href="#">Tech Diary</a>
+            <!-- Botón de menú hamburguesa para dispositivos móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Contenido del menú -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Nuevas Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Favorites</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Explore</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Recommended</a></li>
+                </ul>
+             
             </div>
         </div>
-    </header>
+    </nav>
 
     <!-- Contenedor principal -->
-    <div class="container-fluid">
-        <div class="row">
-            <!-- Barra lateral -->
-            <nav class="col-md-3 col-lg-2 bg-light border-end vh-100 position-fixed d-flex flex-column p-3">
-                <ul class="nav flex-column">
-                    <li class="nav-item"><a href="#" class="nav-link">Nuevas Noticias</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Favorites</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Explore</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Recommended</a></li>
-                </ul>
-                <!-- Botón para agregar nueva noticia -->
-                <button class="btn btn-primary w-100 mt-auto">+ Add new</button>
-            </nav>
+    <div class="container-fluid" style="padding-top: 70px;">
+        <h2 class="mb-4">Últimas Noticias</h2>
+        <!-- Contenedor de noticias -->
+        <div class="row g-4">
+            <!-- Tarjeta de noticia -->
+            <div class="col-12 col-lg-6">
+                <div class="card mb-4">
+                    <!-- Imagen de la noticia -->
+                    <img src="../assets/Lenovo-Logo.png" class="card-img-top" alt="Imagen de la noticia">
+                    <div class="card-body">
+                        <!-- Título de la noticia -->
+                        <h5 class="card-title">Lenovo revoluciona la manufactura con inteligencia artificial</h5>
+                        <!-- Información adicional -->
+                        <p class="card-text"><strong>Publicado Por:</strong> Foro Tecnológico</p>
+                        <p class="card-text"><strong>Fecha:</strong> 3/4/2025</p>
+                        <!-- Resumen de la noticia -->
+                        <p class="card-text">Lenovo está transformando la industria manufacturera con la integración de inteligencia artificial en sus fábricas. La compañía ha desarrollado una serie de herramientas avanzadas, como LeForecast, un modelo de predicción basado en IA que analiza datos de producción para optimizar la eficiencia y reducir costos. Además, su Navegador ESG permite mejorar la sostenibilidad energética mediante el uso de más de 30 modelos de IA especializados en conservación de recursos. Estas innovaciones buscan mejorar la productividad y la calidad en los procesos de fabricación, posicionando a Lenovo como un referente en la automatización industrial.
 
-            <!-- Sección principal -->
-            <main class="col-md-9 col-lg-10 offset-md-3 offset-lg-2 p-4">
-                <h2 class="mb-4">Últimas Noticias</h2>
-                <!-- Contenedor de noticias -->
-                <div class="row row-cols-1 row-cols-md-2 g-4">
-                    <!-- Tarjeta de noticia -->
-                    <div class="col">
-                        <div class="card h-100">
-                            <!-- Imagen de la noticia -->
-                            <img src="../assets/news-placeholder.jpg" class="card-img-top" alt="Imagen de la noticia">
-                            <div class="card-body">
-                                <!-- Título de la noticia -->
-                                <h5 class="card-title">Lenovo revoluciona la manufactura con inteligencia artificial</h5>
-                                <!-- Información adicional -->
-                                <p class="card-text"><strong>Publicado Por:</strong> Foro Tecnológico</p>
-                                <p class="card-text"><strong>Fecha:</strong> 3/4/2025</p>
-                                <!-- Resumen de la noticia -->
-                                <p class="card-text">Lenovo está revolucionando la industria manufacturera mediante la integración de inteligencia artificial en sus fábricas...</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Repetir tarjeta para más noticias -->
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="../assets/news-placeholder.jpg" class="card-img-top" alt="Imagen de la noticia">
-                            <div class="card-body">
-                                <h5 class="card-title">Otra noticia destacada</h5>
-                                <p class="card-text"><strong>Publicado Por:</strong> Foro Tecnológico</p>
-                                <p class="card-text"><strong>Fecha:</strong> 3/4/2025</p>
-                                <p class="card-text">Descripción breve de la noticia destacada...</p>
-                            </div>
-                        </div>
+                            Durante el evento Hannover Messe 2025, Lenovo presentó nuevas soluciones impulsadas por IA, incluyendo Trifork, una herramienta que automatiza el control de calidad y reduce defectos en la producción. También reveló su AI Knowledge Assistant.</p>
                     </div>
                 </div>
-            </main>
+            </div>
+            <!-- Repetir tarjeta para más noticias -->
+            <div class="col-12 col-lg-6">
+                <div class="card h-100">
+                    <img src="../assets/Deepsek-Logo.png" class="card-img-top" alt="Imagen de la noticia">
+                    <div class="card-body">
+                        <h5 class="card-title">DeepSeek lanza su nueva versión con mejoras en precisión y generación de contenido</h5>
+                        <p class="card-text"><strong>Publicado Por:</strong> Foro Tecnológico</p>
+                        <p class="card-text"><strong>Fecha:</strong> 3/4/2025</p>
+                        <p class="card-text">DeepSeek ha anunciado una importante actualización de su modelo de inteligencia artificial, denominada V3-0324. Esta versión introduce mejoras significativas en el rendimiento y la estética de su interfaz, optimizando la precisión en la llamada de funciones y mejorando la calidad de la traducción y redacción. Con estas mejoras, DeepSeek busca consolidarse como una herramienta líder en procesamiento de lenguaje natural.
+
+                            Además, la actualización ha traído avances en la resolución de problemas matemáticos y generación de código, superando el rendimiento de versiones anteriores. DeepSeek V3-0324 ha demostrado mejoras en evaluaciones clave como MMLU-Pro, AIME y LiveCodeBench, lo que lo posiciona como un modelo competitivo frente a otras IA de código abierto y cerrado. También se ha optimizado la reescritura interactiva multi-turno y la calidad de la traducción, ofreciendo respuestas más naturales y estructuradas2. Con una comunidad de usuarios en constante crecimiento, la plataforma espera seguir desarrollando innovaciones que amplíen su utilidad y alcance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <div class="card h-100">
+                    <img src="../assets/Nintendo-Logo.png" class="card-img-top" alt="Imagen de la noticia">
+                    <div class="card-body">
+                        <h5 class="card-title">Nintendo Switch 2 llega con mejoras, pero su precio genera controversia</h5>
+                        <p class="card-text"><strong>Publicado Por:</strong> Foro Tecnológico</p>
+                        <p class="card-text"><strong>Fecha:</strong> 3/4/2025</p>
+                        <p class="card-text">Nintendo ha anunciado el lanzamiento de la Nintendo Switch 2, una consola que promete mejoras significativas en rendimiento y jugabilidad. Con una pantalla más grande, mejor resolución y nuevos controles magnéticos, la compañía japonesa busca ofrecer una experiencia más inmersiva. Además, la consola incluirá funciones innovadoras como GameChat, un sistema de comunicación integrado, y Gameshare, que permitirá compartir juegos con otros usuarios. Sin embargo, el precio base de 449,99 dólares ha generado debate entre los jugadores, especialmente en comparación con los 299 dólares de la versión original.
+
+                            El costo de los juegos también ha sido motivo de críticas, con títulos como Mario Kart World alcanzando los 89,99 euros en formato físico. La comunidad ha expresado su descontento en redes sociales, señalando que estos precios podrían hacer que la consola sea menos accesible. Algunos analistas atribuyen el aumento de costos a factores como los aranceles en EE.UU. y la inflación global. A pesar de la polémica, Nintendo confía en que las mejoras tecnológicas y el catálogo de juegos exclusivos atraerán a los jugadores y consolidarán el éxito de la nueva generación de su consola híbrida.</p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <div class="card h-100">
+                    <img src="../assets/Quantium.png" class="card-img-top" alt="Imagen de la noticia">
+                    <div class="card-body">
+                        <h5 class="card-title">Google Quantum AI avanza en la corrección de errores cuánticos</h5>
+                        <p class="card-text"><strong>Publicado Por:</strong> Foro Tecnológico</p>
+                        <p class="card-text"><strong>Fecha:</strong> 3/4/2025</p>
+                        <p class="card-text">Nintendo ha anunciado el lanzamiento de la Nintendo Switch 2, una consola que promete mejoras significativas en rendimiento y jugabilidad. Con una pantalla más grande, mejor resolución y nuevos controles magnéticos, la compañía japonesa busca ofrecer una experiencia más inmersiva. Además, la consola incluirá funciones innovadoras como GameChat, un sistema de comunicación integrado, y Gameshare, que permitirá compartir juegos con otros usuarios. Sin embargo, el precio base de 449,99 dólares ha generado debate entre los jugadores, especialmente en comparación con los 299 dólares de la versión original.
+
+                            El costo de los juegos también ha sido motivo de críticas, con títulos como Mario Kart World alcanzando los 89,99 euros en formato físico. La comunidad ha expresado su descontento en redes sociales, señalando que estos precios podrían hacer que la consola sea menos accesible. Algunos analistas atribuyen el aumento de costos a factores como los aranceles en EE.UU. y la inflación global. A pesar de la polémica, Nintendo confía en que las mejoras tecnológicas y el catálogo de juegos exclusivos atraerán a los jugadores y consolidarán el éxito de la nueva generación de su consola híbrida.</p>
+                    </div>
+                </div> 
+            </div>
+
         </div>
     </div>
 

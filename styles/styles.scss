@@ -1,3 +1,8 @@
-.titulo{
-    color: red;
+.card-img-top {
+    margin-top: 35px;
+    align-self: center;
+    height: 300px;
+    width: 467px; // Limita el alto máximo de las imágenes
+    object-fit: cover; // Mantiene la proporción y recorta si es necesario
 }
+
