@@ -5,46 +5,31 @@ $text-light: #ffffff; // Texto claro
 $page-bg: #060c5f6c; // Gris oscuro para el fondo de la página
 $text-default: #e0e0e0; // Texto claro para contraste con el fondo oscuro
 
-// Estilos para la barra de navegación
 .navbar {
-    background-color: $secondary-bg !important; // Fondo gris claro
-    color: $text-light; // Texto claro
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Sombra para dar  profundidad
-    padding: 0.5rem 1rem;
+    background-color: #183d6d !important; // Fondo azul oscuro
+    color: #ffffff; // Texto blanco
 
     .navbar-brand {
-        font-size: 1.5rem;
+        color: #ffffff; // Color del texto del título
         font-weight: bold;
-        color: $text-light; // Texto claro para el título
-        text-decoration: none;
 
         &:hover {
-            color: lighten($text-light, 20%); // Aclara el color al pasar el cursor
+            color: #e0e0e0; // Color más claro al pasar el cursor
         }
     }
 
-  
+    .nav-link {
+        color: #ffffff; // Color de los enlaces
+        font-weight: bold;
+        font-size: small;
 
-    .navbar-nav {
-        list-style: none; // Elimina los puntos de las listas
-        padding: 0;
+        &:hover {
+            color: #e0e0e0; // Color más claro al pasar el cursor
+        }
 
-        .nav-item {
-            margin-right: 1rem; // Espaciado entre los elementos de la lista
-
-            .nav-link {
-                color: $text-light; // Texto claro para los enlaces
-                text-decoration: none;
-                font-weight: bold;
-
-                &:hover {
-                    color: lighten($text-light, 20%); // Aclara el color al pasar el cursor
-                }
-
-                &.active {
-                    border-bottom: 2px solid lighten($text-light, 20%); // Indicador de enlace activo
-                }
-            }
+        &.active {
+            border-bottom: 2px solid #ffffff; // Indicador de enlace activo
+            color: #ffffff; // Color del enlace activo
         }
     }
 }
@@ -157,8 +142,4 @@ li{
 .carousel-control-next-icon {
     background-color: black; /* Cambia el color de los íconos a negro */
     border-radius: 50%; /* Opcional: agrega bordes redondeados */
-}
-
-a{
-    color: aquamarine;
 }

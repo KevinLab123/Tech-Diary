@@ -2,35 +2,25 @@
 .navbar {
   background-color: #183d6d !important;
   color: #ffffff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 0.5rem 1rem;
 }
 .navbar .navbar-brand {
-  font-size: 1.5rem;
-  font-weight: bold;
   color: #ffffff;
-  text-decoration: none;
+  font-weight: bold;
 }
 .navbar .navbar-brand:hover {
-  color: white;
+  color: #e0e0e0;
 }
-.navbar .navbar-nav {
-  list-style: none;
-  padding: 0;
-}
-.navbar .navbar-nav .nav-item {
-  margin-right: 1rem;
-}
-.navbar .navbar-nav .nav-item .nav-link {
+.navbar .nav-link {
   color: #ffffff;
-  text-decoration: none;
   font-weight: bold;
+  font-size: small;
 }
-.navbar .navbar-nav .nav-item .nav-link:hover {
-  color: white;
+.navbar .nav-link:hover {
+  color: #e0e0e0;
 }
-.navbar .navbar-nav .nav-item .nav-link.active {
-  border-bottom: 2px solid white;
+.navbar .nav-link.active {
+  border-bottom: 2px solid #ffffff;
+  color: #ffffff;
 }
 
 body {
@@ -103,10 +93,6 @@ a.btn-outline-success {
 .carousel-control-next-icon {
   background-color: black; /* Cambia el color de los íconos a negro */
   border-radius: 50%; /* Opcional: agrega bordes redondeados */
-}
-
-a {
-  color: aquamarine;
 }
 
 /*# sourceMappingURL=styles.css.map */
