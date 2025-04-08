@@ -131,6 +131,8 @@ li{
 
 .card-img-top {
     @extend .image-standard;
+    width: 100%; // Asegura que la imagen ocupe todo el ancho del contenedor
+    height: auto;
 }
 
 // Aplica los mismos estilos a las imágenes del carrusel

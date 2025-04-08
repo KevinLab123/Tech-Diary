@@ -88,6 +88,11 @@ a.btn-outline-success {
   line-height: 1.6;
 }
 
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: black; /* Cambia el color de los íconos a negro */
