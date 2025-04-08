@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseñas de Clientes</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+  <!-- Barra de navegación superior -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom fixed-top" style="z-index: 1030;">
+    <div class="container-fluid">
+        <!-- Título del sitio -->
+        <a class="navbar-brand" href="#">Tech Diary</a>
+        <!-- Botón de menú hamburguesa para dispositivos móviles -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Contenido del menú -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link" href="../pages/noticias.html">Nuevas Noticias</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/proyectos.html">Proyectos De La Comunidad</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/tecnologias.html">Tecnologías Emergentes</a></li>
+                <li class="nav-item"><a class="nav-link active" href="../pages/reseñas.html">Reseñas</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/acercaDe.html">Sobre Nosotros</a></li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+
+  <!-- Contenedor principal -->
+  <div class="container mt-5 pt-5">
+      <h1 class="text-center mb-4">Reseñas</h1>
+      <div class="row">
+          <div class="col-12">
+              <div class="card mb-3 primary">
+                  <div class="card-body">
+                      <h5 class="card-title"><strong>Usuario:</strong> Juan Perez</h5>                      
+                      <p class="card-text">Me parece que el producto es muy bueno, cumple con mis expectativas y el tiempo de envío fue muy eficiente, como observación el empacado no fue el mejor, la caja se dañó en el camino.</p>
+                  </div>
+              </div>
+              <div class="card mb-3 secondary">
+                  <div class="card-body">
+                      <h5 class="card-title"><strong>Usuario:</strong> Maria Lopez</h5>
+                      <p class="card-text">El producto es excelente, llegó a tiempo y en perfectas condiciones. Muy satisfecha con la compra.</p>
+                  </div>
+              </div>
+              <div class="d-flex justify-content-end">
+                  <button class="btn btn-outline-primary btn-lg mb-3">Crear Reseña</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

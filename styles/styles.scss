@@ -1,3 +1,113 @@
+// Variables de colores
+$primary-bg: #1e293b; // Azul oscuro
+$secondary-bg: #183d6d; // Gris claro
+$text-light: #ffffff; // Texto claro
+$page-bg: #060c5f6c; // Gris oscuro para el fondo de la página
+$text-default: #e0e0e0; // Texto claro para contraste con el fondo oscuro
+
+// Estilos para la barra de navegación
+.navbar {
+    background-color: $secondary-bg !important; // Fondo gris claro
+    color: $text-light; // Texto claro
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Sombra para dar  profundidad
+    padding: 0.5rem 1rem;
+
+    .navbar-brand {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $text-light; // Texto claro para el título
+        text-decoration: none;
+
+        &:hover {
+            color: lighten($text-light, 20%); // Aclara el color al pasar el cursor
+        }
+    }
+
+  
+
+    .navbar-nav {
+        list-style: none; // Elimina los puntos de las listas
+        padding: 0;
+
+        .nav-item {
+            margin-right: 1rem; // Espaciado entre los elementos de la lista
+
+            .nav-link {
+                color: $text-light; // Texto claro para los enlaces
+                text-decoration: none;
+                font-weight: bold;
+
+                &:hover {
+                    color: lighten($text-light, 20%); // Aclara el color al pasar el cursor
+                }
+
+                &.active {
+                    border-bottom: 2px solid lighten($text-light, 20%); // Indicador de enlace activo
+                }
+            }
+        }
+    }
+}
+
+// Mixin para el fondo de la página
+@mixin page-background($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    font-family: 'Arial', sans-serif; // Fuente predeterminada
+    
+}
+
+// Estilo para el body
+body {
+    @include page-background($page-bg, $text-default);
+
+    // Ajustes adicionales para enlaces y texto
+    a {
+        color: lighten($text-default, 20%);
+        text-decoration: none;
+
+        &:hover {
+            color: lighten($text-default, 40%);
+        }
+    }
+}
+
+// Mixin para los estilos de los cards
+@mixin card-style($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+}
+
+// Estilos para los cards
+.card {
+    &.primary {
+        @include card-style($primary-bg, $text-light);
+    }
+
+    &.secondary {
+        @include card-style($secondary-bg, $text-light);
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+
+    .card-text {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
 .image-standard {
     margin-top: 35px;
     align-self: center;
