@@ -1,9 +1,32 @@
-.card-img-top {
+@charset "UTF-8";
+.image-standard, .carousel-item img, .card-img-top {
   margin-top: 35px;
   align-self: center;
   height: 300px;
   width: 467px;
-  object-fit: cover;
+  object-fit: contain;
+}
+
+.btn-relative, a.btn-outline-primary,
+a.btn-outline-success {
+  font-size: 1.5em;
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+}
+
+.text-large, li, p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black; /* Cambia el color de los íconos a negro */
+  border-radius: 50%; /* Opcional: agrega bordes redondeados */
+}
+
+a {
+  color: aquamarine;
 }
 
 /*# sourceMappingURL=styles.css.map */

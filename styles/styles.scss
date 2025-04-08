@@ -1,8 +1,54 @@
-.card-img-top {
+.image-standard {
     margin-top: 35px;
     align-self: center;
-    height: 300px;
-    width: 467px; // Limita el alto máximo de las imágenes
-    object-fit: cover; // Mantiene la proporción y recorta si es necesario
+    height: 300px; // Limita el alto máximo de las imágenes
+    width: 467px; // Limita el ancho máximo de las imágenes
+    object-fit: contain; // Mantiene la proporción y recorta si es necesario
 }
 
+.btn-relative {
+    font-size: 1.5em; // Tamaño de fuente relativo al elemento padre
+    padding: 0.5em 1em; // Espaciado interno proporcional al tamaño de la fuente
+    border-radius: 0.25em; // Bordes redondeados proporcionales
+}
+
+
+
+// Aplica los estilos a los botones de GitHub y Demo
+a.btn-outline-primary,
+a.btn-outline-success {
+    @extend .btn-relative;
+}
+
+.text-large {
+    font-size: 1.5rem; // Ajusta el tamaño de la fuente
+    line-height: 1.6; // Ajusta el interlineado para mejorar la legibilidad
+}
+
+// Aplica los estilos a todos los párrafos
+p {
+    @extend .text-large;
+}
+
+li{
+    @extend .text-large
+}
+
+.card-img-top {
+    @extend .image-standard;
+}
+
+// Aplica los mismos estilos a las imágenes del carrusel
+.carousel-item img {
+    @extend .image-standard;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black; /* Cambia el color de los íconos a negro */
+    border-radius: 50%; /* Opcional: agrega bordes redondeados */
+}
+
+a{
+    color: aquamarine;
+}
