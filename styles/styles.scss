@@ -1,35 +1,35 @@
 // Variables de colores
-$primary-bg: #1e293b; // Azul oscuro
+$primary-bg: #696969; // Azul oscuro
 $secondary-bg: #183d6d; // Gris claro
 $text-light: #ffffff; // Texto claro
-$page-bg: #060c5f6c; // Gris oscuro para el fondo de la página
+$page-bg: #141414ce; // Gris oscuro para el fondo de la página
 $text-default: #e0e0e0; // Texto claro para contraste con el fondo oscuro
 
 .navbar {
-    background-color: #183d6d !important; // Fondo azul oscuro
-    color: #ffffff; // Texto blanco
+    background-color: $secondary-bg !important; // Fondo azul oscuro
+    color: $text-light; // Texto blanco
 
     .navbar-brand {
-        color: #ffffff; // Color del texto del título
+
+        color: $text-light; // Color del texto del título
         font-weight: bold;
 
         &:hover {
-            color: #e0e0e0; // Color más claro al pasar el cursor
+            color: $primary-bg; // Color más claro al pasar el cursor
         }
     }
 
     .nav-link {
-        color: #ffffff; // Color de los enlaces
+        color: $text-light; // Color de los enlaces
         font-weight: bold;
         font-size: small;
 
         &:hover {
-            color: #e0e0e0; // Color más claro al pasar el cursor
+            color: $primary-bg; // Color más claro al pasar el cursor
         }
 
         &.active {
-            border-bottom: 2px solid #ffffff; // Indicador de enlace activo
-            color: #ffffff; // Color del enlace activo
+            color: $text-light; // Color del enlace activo
         }
     }
 }

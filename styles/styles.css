@@ -8,7 +8,7 @@
   font-weight: bold;
 }
 .navbar .navbar-brand:hover {
-  color: #e0e0e0;
+  color: #696969;
 }
 .navbar .nav-link {
   color: #ffffff;
@@ -16,15 +16,14 @@
   font-size: small;
 }
 .navbar .nav-link:hover {
-  color: #e0e0e0;
+  color: #696969;
 }
 .navbar .nav-link.active {
-  border-bottom: 2px solid #ffffff;
   color: #ffffff;
 }
 
 body {
-  background-color: rgba(6, 12, 95, 0.4235294118);
+  background-color: rgba(20, 20, 20, 0.8078431373);
   color: #e0e0e0;
   font-family: "Arial", sans-serif;
 }
@@ -37,7 +36,7 @@ body a:hover {
 }
 
 .card.primary {
-  background-color: #1e293b;
+  background-color: #696969;
   color: #ffffff;
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
